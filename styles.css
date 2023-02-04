@@ -1,22 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");s
-
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+s * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
 }
 
-.navbar{
-    background-color: #7C4EC8;
-    visibility: hidden;
-
+.inicio {
+    background-position: center center;
+    background-size: cover;
 }
 
-.link-bar{
+.title{
+    color: white;
+    text-align: center
+}
+
+.header {
+    padding: 1rem 0 3rem 0;
+    
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #7c4ec8;
+    /* opacity: 0; */
+    visibility: hidden;
+    
+}
+
+/* .bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+} */
+
+.link-bar {
     font-weight: 400;
     font-size: 40px;
     color: black;
@@ -27,50 +55,94 @@ body{
     padding: 1rem;
 }
 
-.show{
+.show {
     visibility: visible;
     height: auto;
 }
 
+.hero-container{
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    
+}
+
+.hero-container ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 9s infinite alternate ease-in-out;
+
+}
+
+.hero-container li{
+   list-style: none;
+   width: 100%;
+}
+
+.hero-container img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0%{margin-left: 0%;}
+    35%{margin-left: 0%;}
+
+    40%{margin-left: -100%;}
+    75%{margin-left: -100%;}
+
+    80%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
 
 @media (min-width: 400px) {
-
-    .navbar{
+    .navbar {
         align-items: center;
         display: flex;
         flex-direction: column;
         padding-top: 3rem;
-        transition: visibility .3s ease-in-out, opacity .5s linear, height .6s linear;
+        transition: visibility 0.3s ease-in-out, opacity 0.5s linear, height 0.6s linear;
+        border-radius: 2rem;
     }
 
-    .mobile-image{
-        
+    .mobile-image {
         width: 4rem;
     }
 
-    .mobile-menu{
+    .mobile-menu {
         text-align: center;
-
     }
 }
 
-
 @media (min-width: 768px) {
-    
-    .navbar{
+    .navbar {
         visibility: visible;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        border-radius: 2rem;
-   }
 
-   .mobile-image{
-    visibility: hidden;
-   }
+    }
+    .inicio{
+        min-width: 70rem;
+    }
+
+    .mobile-image {
+        visibility: hidden;
+    }
+
+    .header-content{
+        min-width: 70rem;
+        width: auto;
+        height: auto;
+    }
+    .bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3rem;
+    }
 }
 
 @media (min-width: 1024px) {
-    
-
 }
