@@ -1,7 +1,47 @@
-const skillContainer = document.getElementById('skills')
+const skillContainer = document.getElementById('skills');
+const slider = document.getElementById('slider');
+const btnL = document.getElementById('btn-l')
+const btnR = document.getElementById('btn-r')
 
+let sliderSection = document.querySelectorAll(".slider-section");
+let sliderSectionLast = sliderSection[sliderSection.length - 1];
 
-document.addEventListener('DOMContentLoaded', function(){
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+function right() {
+    let sliderSectionFirst = document.querySelectorAll(".slider-section")[0];
+    slider.style.marginLeft = "-200%";
+    slider.style.transition = "all 0.4s";
+    setTimeout(function () {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+        slider.style.marginLeft = "-100%";
+    }, 400);
+}
+
+function left() {
+
+    let sliderSection = document.querySelectorAll(".slider-section");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    slider.style.marginLeft = "0";
+    slider.style.transition = "all 0.4s";
+    setTimeout(function () {
+        slider.style.transition = "none";
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+        slider.style.marginLeft = "-100%";
+    }, 400);
+}
+
+btnR.addEventListener('click', function () {
+    right();
+})
+
+btnL.addEventListener('click', function () {
+    left();
+})
+ 
+
+document.addEventListener('DOMContentLoaded', function () {
     eventListener();
 })
 
@@ -49,24 +89,26 @@ function printSkills(skills) {
 </div>`
 }
 
-function eventListener(){
-    const mobileMenu = document.querySelector('.mobile-menu')    
+function eventListener() {
+    const mobileMenu = document.querySelector('.mobile-menu')
     mobileMenu.addEventListener('click', navResponsive);
     printSkills(skills)
-    
+
 }
 
-function navResponsive(){
+function navResponsive() {
     console.log('click')
     const nav = document.querySelector('.barra')
     nav.classList.toggle('show')
 }
 
 var skills = {
-    "HTML" : 60,
-    "CSS" : 45,
-    "JavaScript" : 50,
-    "Java" : 70,
-    "PHP" : 70,
-    "Python" : 75
+    "HTML": 60,
+    "CSS": 45,
+    "JavaScript": 50,
+    "Java": 70,
+    "PHP": 70,
+    "Python": 75
 }
+
+
