@@ -70,5 +70,3 @@ var skills = {
     "PHP" : 70,
     "Python" : 75
 }
-
-console.log(skills[0])
