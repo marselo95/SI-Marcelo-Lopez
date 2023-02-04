@@ -12,6 +12,6 @@ function eventListener(){
 
 function navResponsive(){
     console.log('click')
-    const nav = document.querySelector('.navbar')
+    const nav = document.querySelector('.barra')
     nav.classList.toggle('show')
 }
