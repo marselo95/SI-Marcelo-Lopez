@@ -39,7 +39,7 @@ btnR.addEventListener('click', function () {
 btnL.addEventListener('click', function () {
     left();
 })
- 
+
 
 document.addEventListener('DOMContentLoaded', function () {
     eventListener();
@@ -86,7 +86,16 @@ function printSkills(skills) {
     <div class="progress-bar">
         <div class="progress" style="--w:${skills.Python}%">${skills.Python}%</div>
     </div>
-</div>`
+</div>
+
+<div class="skill">
+    <h2>Procrastinar</h2>
+    <div class="progress-bar">
+        <div class="progress" style="--w:${skills.Procrastinar}%">${skills.Procrastinar}%</div>
+    </div>
+</div>
+
+`
 }
 
 function eventListener() {
@@ -108,7 +117,8 @@ var skills = {
     "JavaScript": 50,
     "Java": 70,
     "PHP": 70,
-    "Python": 75
+    "Python": 75,
+    "Procrastinar": 100
 }
 
 
