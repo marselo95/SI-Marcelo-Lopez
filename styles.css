@@ -83,7 +83,7 @@ body {
     max-width: 850px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 0 0 0 10px #fff, 0 15px 50px;
+    box-shadow: 0 0 0 10px #ffffff, 0 15px 50px;
     position: relative;
 }
 
@@ -121,7 +121,7 @@ body {
 }
 
 .slider-btn:hover {
-    background-color: purple;
+    background-color: #7c4ec8;
 }
 
 .slider-btn-r {
