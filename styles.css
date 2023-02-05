@@ -34,7 +34,6 @@ body {
     text-align: center;
 }
 
-
 .header-content {
     display: flex;
     flex-direction: column;
@@ -266,7 +265,7 @@ legend {
     align-items: center;
 }
 
-.formulario{
+.formulario {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -274,12 +273,29 @@ legend {
     align-items: center;
 }
 
-.formu{
+.formu {
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.warning {
+    
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1rem;
+}
+
+.green {
+    background-color: green;
+}
+
+.red{
+    background-color: red;
 }
 
 @keyframes aument {
@@ -371,7 +387,6 @@ legend {
         margin: 0 auto;
         max-width: 120rem;
         width: 95%;
-
     }
 
     .experience-container {
@@ -392,7 +407,7 @@ legend {
         );
     }
 
-    .exp a{
+    .exp a {
         display: block;
         width: 100%;
     }
