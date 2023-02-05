@@ -79,7 +79,6 @@ function validateName() {
         if (letras.includes(name.value[index].toLowerCase())) {
             continue
         } else {
-            alert("El nombre no puede contener caracteres especiales");
             return false;
         }
 
@@ -217,8 +216,8 @@ function scrollNav() {
 
 var skills = {
     "HTML": 60,
-    "CSS": 45,
-    "JavaScript": 50,
+    "CSS": 50,
+    "JavaScript": 60    ,
     "Java": 70,
     "PHP": 70,
     "Python": 75,
