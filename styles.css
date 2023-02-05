@@ -41,7 +41,6 @@ body {
     padding: 2px;
     color: white;
     margin: 2rem;
-    overflow: hidden;
 }
 
 .header-content h1 {
@@ -282,7 +281,6 @@ legend {
 }
 
 .warning {
-    
     font-weight: bold;
     width: 100%;
     text-align: center;
@@ -294,7 +292,7 @@ legend {
     background-color: green;
 }
 
-.red{
+.red {
     background-color: red;
 }
 
@@ -331,7 +329,7 @@ legend {
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 380px) {
     .navbar {
         align-items: center;
         display: flex;
@@ -360,9 +358,9 @@ legend {
         justify-content: center;
         height: auto;
     }
-    .inicio {
+    /* .inicio {
         min-width: 70rem;
-    }
+    } */
 
     .mobile-image {
         visibility: hidden;
@@ -370,7 +368,7 @@ legend {
     }
 
     .header-content {
-        min-width: 70rem;
+        /* min-width: 70rem; */
         width: auto;
         height: auto;
     }

@@ -43,7 +43,7 @@ form.addEventListener('submit', e => {
 
     if (email === true && nombre === true) {
         alert(nam.value + "\n" + crr.value + "\n" + mensaje.value);
-        form.innerHTML += `<p class="warning green s">Mensaje enviado exitosamente</P>` 
+        form.innerHTML += `<p class="warning green s">Mensaje enviado exitosamente</P>`
 
         setTimeout(function () {
             const alert = document.querySelector('.s');
@@ -217,7 +217,7 @@ function scrollNav() {
 var skills = {
     "HTML": 60,
     "CSS": 50,
-    "JavaScript": 60    ,
+    "JavaScript": 60,
     "Java": 70,
     "PHP": 70,
     "Python": 75,
