@@ -8,6 +8,18 @@ let sliderSectionLast = sliderSection[sliderSection.length - 1];
 
 slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
+document.addEventListener('DOMContentLoaded', function () {
+    startApp();
+});
+
+function startApp(){
+    scrollNav();
+}
+
+function start(){
+    scrollNav();
+}
+
 function right() {
     let sliderSectionFirst = document.querySelectorAll(".slider-section")[0];
     slider.style.marginLeft = "-200%";
@@ -109,6 +121,18 @@ function navResponsive() {
     console.log('click')
     const nav = document.querySelector('.barra')
     nav.classList.toggle('show')
+}
+
+function scrollNav() {
+    const links = document.querySelectorAll('.navbar a');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const scrollSection = e.target.attributes.href.value;
+            const section = document.querySelector(scrollSection);
+            section.scrollIntoView({behavior:"smooth"});
+        });
+    });
 }
 
 var skills = {

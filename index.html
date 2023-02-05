@@ -26,10 +26,10 @@
             <div class="barra">
 
                 <nav class="navbar">
-                    <a class="link-bar" href="#">Experience</a>
-                    <a class="link-bar" href="#">About me</a>
-                    <a class="link-bar" href="#">Skills</a>
-                    <a class="link-bar" href="#">Contact me</a>
+                    <a class="link-bar" href="#experience">Experience</a>
+                    <a class="link-bar" href="#about-me">About me</a>
+                    <a class="link-bar" href="#skills">Skills</a>
+                    <a class="link-bar" href="#contact-me">Contact me</a>
                 </nav>
 
             </div>
@@ -55,53 +55,71 @@
 
     </header>
 
-    <section class="experience">
+    <section class="experience" id="experience">
         <h1>Experience</h1>
 
         <p>A continuación verás algunas cosas que he realizado en cursos que honestamente ni recuerdo cómo lo hice</p>
 
 
+
         <div class="experience-container">
 
-            <div>
-                <h1>Musica</h1>
-                <h3>Tecnologias</h3>
-                <li>
-                    <ul>CSS</ul>
-                    <ul>HTML</ul>
-                    <ul>JavaScrip</ul>
-                </li>
-                <h3>Fecha</h3>
+            <div class="exp">
                 <a href="https://sleepy-hermann-d75200.netlify.app/"><img src="./img/proyecto1.PNG" alt=""></a>
+
+
+                <div class="exp-content">
+                    <h1>Eventos musicales</h1>
+                    <h3>Tecnologias</h3>
+                    <li>
+                        <ul>CSS</ul>
+                        <ul>HTML</ul>
+                        <ul>JavaScript</ul>
+                    </li>
+                    <h3>Fecha: 05/01/22</h3>
+                </div>
+
+            </div>
+            <div class="exp">
+
+                <a href="https://sleepy-hermann-d75200.netlify.app/"><img src="./img/proyecto 2.PNG" alt=""></a>
+
+
+                <div class="exp-content">
+                    <h1>Blog</h1>
+                    <h3>Tecnologias</h3>
+                    <li>
+                        <ul>CSS</ul>
+                        <ul>HTML</ul>
+                        <ul>JavaScript</ul>
+                    </li>
+                    <h3>Fecha: 21/12/21</h3>
+                </div>
+
+            </div>
+            <div class="exp">
+
+                <a href="https://github.com/marselo95/ProyectoEDD"><img src="./img/pryecto3.png""></a>
+
+
+                <div class=" exp-content">
+                    <h1>Gestor de almacenes</h1>
+                    <h3>Tecnologias</h3>
+                    <li>
+                        <ul>Java</ul>
+                        <ul>‏‏‎‎ ‏‏‎‏‏‎‎ ‏‏⠀</ul>
+                        <ul>‏‏‎‎ ‏‏‎‏‏‎‎ ‏‏⠀</ul>
+                    </li>
+                    <h3>Fecha: 06/02/22 </h3>
             </div>
 
-            <div>
-                <h1>Blog</h1>
-                <h3>Tecnologias</h3>
-                <li>
-                    <ul>CSS</ul>
-                    <ul>HTML</ul>
-                    <ul>JavaScript</ul>
-                </li>
-                <h3>Fecha</h3>
-                <a href="https://happy-euclid-23f804.netlify.app/"><img src="./img/proyecto 2.PNG" alt=""></a>
-            </div>
+        </div>
 
-            <div>
-
-                <h1>Programa de pedidos</h1>
-                <h3>Tecnologias</h3>
-                <li>
-                    <ul>Java</ul>
-                </li>
-                <h3>Fecha</h3>
-                <a href="https://github.com/marselo95/ProyectoEDD"><img src="./img/pryecto3.png" alt=""></a>
-            </div>
         </div>
 
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <h1>About me</h1>
         <h1>Marcelo Lopez</h1>
 
@@ -151,7 +169,7 @@
 
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
 
         <h1>Skills</h1>
 
@@ -161,36 +179,39 @@
 
     </section>
 
-    <section class="form">
-        <form class="formulario">
-            <fieldset>
-                <legend>Informacion Personal</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Tu nombre" id="nombre">
+    <section class="form" id="contact-me">
 
-                <label for="email">Email</label>
-                <input type="email" placeholder="correo@ejemplo.com" id="email">
+        <div class="formu">
+            <form class="formulario">
+                <fieldset class="form">
+                    <legend>Informacion Personal</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Tu nombre" id="nombre">
 
-                <label for="telefono">Telefono</label>
-                <input type="email" placeholder="Tu numero de telefono" id="telefono">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="correo@ejemplo.com" id="email">
 
-                <label for="mensaje">Mensaje</label>
-                <textarea type="email" id="mensaje"> </textarea>
-                <input type="submit" value="Enviar" class="buttom">
-            </fieldset>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea type="email" id="mensaje"> </textarea>
+                    <input type="submit" value="Enviar" class="buttom">
+                </fieldset>
 
-        </form>
-
-        <h1>Social Media</h1>
-
-        <div class="social-media">
-            <a href="mailto:marcelo.lopez@correo.unimet.edu.ve"> <img src="./img/icons8-gmail.svg" alt=""></a>
-            <a href="https://www.instagram.com/marcelo_elu/"><img src="./img/icons8-instagram.svg" alt=""></a>
-            <a href="https://twitter.com/Marselo95"><img src="./img/icons8-twitter.svg" alt=""></a>
-            <a href="https://api.whatsapp.com/send?phone=584241381428"><img src="./img/icons8-whatsapp.svg" alt=""></a>
+            </form>
         </div>
 
+
+
+
     </section>
+
+    <h1>Social Media</h1>
+    <div class="social-media">
+
+        <a href="mailto:marcelo.lopez@correo.unimet.edu.ve"> <img src="./img/icons8-gmail.svg" alt=""></a>
+        <a href="https://www.instagram.com/marcelo_elu/"><img src="./img/icons8-instagram.svg" alt=""></a>
+        <a href="https://twitter.com/Marselo95"><img src="./img/icons8-twitter.svg" alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=584241381428"><img src="./img/icons8-whatsapp.svg" alt=""></a>
+    </div>
 
     <script src="./app.js"></script>
 

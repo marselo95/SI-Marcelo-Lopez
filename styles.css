@@ -2,8 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: inherit;
 }
 
 h1 {
@@ -21,6 +20,8 @@ p {
 
 body {
     background-color: black;
+    line-height: 1.8;
+    overflow-x: hidden;
 }
 
 .inicio {
@@ -33,9 +34,6 @@ body {
     text-align: center;
 }
 
-.header {
-    padding: 1rem 0 1rem 0;
-}
 
 .header-content {
     display: flex;
@@ -44,6 +42,7 @@ body {
     padding: 2px;
     color: white;
     margin: 2rem;
+    overflow: hidden;
 }
 
 .header-content h1 {
@@ -82,11 +81,10 @@ body {
 
 .hero-container {
     width: 100%;
-    max-width: 900px;
+    max-width: 850px;
     margin: auto;
     overflow: hidden;
-    box-shadow: 0 0 0 10px #fff,
-                0 15px 50px;
+    box-shadow: 0 0 0 10px #fff, 0 15px 50px;
     position: relative;
 }
 
@@ -108,7 +106,7 @@ body {
     object-fit: cover;
 }
 
-.slider-btn{
+.slider-btn {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -120,17 +118,17 @@ body {
     text-align: center;
     border-radius: 50%;
     color: black;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
-.slider-btn:hover{
+.slider-btn:hover {
     background-color: purple;
 }
 
-.slider-btn-r{
+.slider-btn-r {
     right: 10px;
 }
-.slider-btn-l{
+.slider-btn-l {
     left: 10px;
 }
 
@@ -148,13 +146,15 @@ body {
 }
 
 .experience-container {
-    flex-direction: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    gap: 1em;
+    gap: 1rem;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
 .experience-container img {
@@ -162,6 +162,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .about-me {
@@ -173,15 +174,13 @@ body {
     height: 100%;
 }
 
-.gustos li{
+.gustos li {
     margin: 1rem 0 0 1rem;
 }
 
-.gustos ul{
+.gustos ul {
     margin: 1rem 0 0 1rem;
 }
-
-
 
 .skills {
     margin: 5rem 2rem 2rem 2rem;
@@ -198,6 +197,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 2rem;
 }
 
 .progress-bar {
@@ -223,7 +223,9 @@ input:not([type="submit"]),
 textarea {
     padding: 1rem;
     display: block;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
     background-color: white;
     border: 1px solid gray;
     border-radius: 1rem;
@@ -245,7 +247,7 @@ textarea {
 
 .form {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .buttom::hover {
@@ -261,6 +263,22 @@ legend {
     display: flex;
     margin: 0 2rem 0 2rem;
     justify-content: space-between;
+    align-items: center;
+}
+
+.formulario{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formu{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -313,7 +331,6 @@ legend {
         padding: 0 0 0 0;
     }
 
-    
     .mobile-menu {
         text-align: center;
     }
@@ -349,17 +366,35 @@ legend {
         height: auto;
     }
 
-    .experience{
-        margin-top: 6rem;
+    .experience {
+        /* margin-top: 6rem; */
+        margin: 0 auto;
+        max-width: 120rem;
+        width: 95%;
+
     }
 
     .experience-container {
-        margin: 4rem 0 4rem 1rem;
-        display: flex;
+        display: grid;
         gap: 2rem;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .exp {
+        border: 1px solid white;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(121, 9, 109, 1) 28%,
+            rgba(87, 32, 216, 1) 81%,
+            rgba(0, 212, 255, 1) 100%
+        );
+    }
+
+    .exp a{
+        display: block;
+        width: 100%;
     }
 
     .about-me img {
@@ -373,6 +408,7 @@ legend {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin: 2rem;
     }
 
     .about-me p {
@@ -391,7 +427,7 @@ legend {
         align-items: center;
     }
 
-    .gustos li{
+    .gustos li {
         display: flex;
         flex-direction: row;
         align-items: center;
